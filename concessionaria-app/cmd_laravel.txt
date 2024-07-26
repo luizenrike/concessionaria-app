@@ -1,0 +1,15 @@
+php artisan serve => liga o servidor e a aplicação começa a executar
+php artisan make:controller MeuController => cria um novo controlador com o nome MeuController
+
+---- PHP ARTISAN EM BANCOS DE DADOS ----
+
+php artisan make:migration create_products_table => cria um arquivo de migrations para a criação de nova tabela chamada products;
+php artisan make:migration add_category_to_product_table => cria um arquivo de migrations para a adição de uma nova coluna (category) na tabela product
+php artisan migrate:status => verifica os status de todas as migrations
+php artisan migrate:fresh => deleta todas as tabelas e executa todas as migrations novamente
+php artisan migrate:refresh => faz rollback de todas as migrations e executa todas novamente
+php artisan migrate => executa as migrations na pasta database/migrations
+
+---- PHP ARTISAN EM MODELS ----
+
+php artisan make:model Product => cria um novo Model chamado Product, que será a entidade responsável por mapear a tabela products no banco

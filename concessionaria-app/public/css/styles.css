@@ -1,0 +1,160 @@
+* {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: rgb(238, 244, 244);
+}
+
+.img-store {
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(180, 180, 180);
+    object-fit: cover;
+
+
+}
+
+.img-show{
+    width: 800px;
+}
+
+.black-text {
+    color: black;
+}
+
+.blue-text {
+    color: rgb(27, 100, 137);
+}
+
+.background-white {
+    background-color: white;
+    border: 2px solid;
+}
+
+.floating-container {
+    width: 650px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 50px auto;
+}
+
+.floating-container-show-itens {
+    width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px; 
+}
+
+.show-itens{
+    color:rgb(27, 100, 137);
+    font-size: 1.0em;
+    font-weight:400;
+}
+
+.btn-explorar{
+    background-color: rgb(27, 100, 137);
+}
+
+.price-color {
+    color: #02087d; 
+    font-weight: bold; 
+    font-size: 1.5em; 
+}
+
+.title-show-item{
+    color:rgb(77, 77, 79);
+    font: bold;
+}
+.text-upper {
+    text-transform: uppercase;
+    text-decoration: solid;
+}
+
+.text-convite{
+    font-size: 1.1em;
+    text-align: justify;
+    font:bold;
+}
+
+.contact{
+    background-color: rgb(254, 254, 254);
+}
+.produtos-item {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.title-show {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold; 
+    font-size: 2.0em; 
+    text-align: center;
+}
+
+.margin-left {
+    margin-left: 15px;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.img-slide {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.img-card {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.headercolor {
+    background-color: rgb(27, 100, 137);
+}
+
+.item-header:hover {
+    color: rgb(93, 161, 203);
+}
+
+.item-header:focus,
+.item-header:active {
+    color: rgb(93, 161, 203);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+}
+
+
+.item-header {
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #078c38; 
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; 
+}
+
+.whatsapp-button i {
+    margin-right: 8px;
+}
