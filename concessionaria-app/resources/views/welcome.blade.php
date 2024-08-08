@@ -1,10 +1,14 @@
 @extends('layouts.main')
 
+
+
 @section('title', 'Página Inicial')
 
 @section('content')
 
-
+@auth
+<h5 class="p-4 blue-text">Olá {{Auth::user()->name}}, seja bem-vindo</h5>
+@endauth
 <div class="container col-md-12 mt-4">
     <div class="row">
         <div class="col-md-6">

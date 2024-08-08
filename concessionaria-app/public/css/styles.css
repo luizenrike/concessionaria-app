@@ -15,8 +15,12 @@ body {
 
 }
 
+.flex-display{
+    display: flex;
+}
+
 .img-show{
-    width: 800px;
+    width: 600px;
 }
 
 .black-text {
@@ -33,8 +37,7 @@ body {
 }
 
 .floating-container {
-    width: 650px;
-    padding: 20px;
+    width: 600px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
@@ -42,7 +45,7 @@ body {
 }
 
 .floating-container-show-itens {
-    width: 800px;
+    width: 600px;    
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
@@ -50,10 +53,25 @@ body {
     margin-top: 20px; 
 }
 
+.horizontal-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.horizontal-list li {
+    flex: 1 0 33.3333%; 
+    box-sizing: border-box;
+    padding: 10px;
+}
+
 .show-itens{
-    color:rgb(27, 100, 137);
+    color:rgb(0, 187, 59);
     font-size: 1.0em;
     font-weight:400;
+    margin-bottom: 20px;
 }
 
 .btn-explorar{
@@ -83,6 +101,7 @@ body {
 
 .contact{
     background-color: rgb(254, 254, 254);
+    padding: 10px;
 }
 .produtos-item {
     font-family: 'Times New Roman', Times, serif;
@@ -103,6 +122,69 @@ body {
 .text-justify {
     text-align: justify;
 }
+
+.text-center{
+    text-align: center;
+}
+
+.text-color-white{
+    color: white;
+}
+
+.background-blue{
+    background-color: #110047;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+    
+}
+
+.img-anuncie {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.whatsapp-button-anuncie {
+    position: absolute;
+    top: 70%; /* Ajuste a posição vertical conforme necessário */
+    right: 45%; /* Ajuste a posição horizontal conforme necessário */
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0ac74f; 
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-button-anuncie:hover {
+    background-color: #128C7E; 
+}
+
+.whatsapp-button-anuncie i {
+    margin-right: 8px;
+}
+
+.texto-sobrepor {
+    position: absolute;
+    top: 50%; /* Ajuste a posição vertical conforme necessário */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza o texto em relação ao seu ponto de origem */
+    color: white; /* Cor do texto */
+    font-size: 24px; /* Tamanho da fonte */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra para destacar o texto */
+}
+
 
 .img-slide {
     width: 100%;
@@ -157,4 +239,10 @@ body {
 
 .whatsapp-button i {
     margin-right: 8px;
+}
+
+
+
+.color-teme{
+    background-color:  rgb(93, 161, 203);
 }

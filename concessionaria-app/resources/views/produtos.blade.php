@@ -1,13 +1,19 @@
 @extends('layouts.main')
 
-@section('title', 'Produtos')
+@section('title', 'Nossos Veículos')
 
 @section('content')
 
 <div class="container col-md-12 mt-4">
     <div class="row">
         <div id="car-container" class="col-md-10">
-
+            @if($search)
+            <h4>Buscando por: {{$search}}</h4>
+                @if($cars->isEmpty())
+                <div class="alert alert-warning">Não foram encontrados veículos com o nome: {{$search}}</div>
+                @endif
+            @endif
+            
             <div class="container">
                 <div class="row">
                     @foreach($cars as $car)

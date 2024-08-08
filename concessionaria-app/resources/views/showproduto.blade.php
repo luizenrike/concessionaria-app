@@ -4,7 +4,7 @@
 
 @section('content')
 
-<div class="container-fluid">
+<div class="container col-md-12">
     <h2 class="title-show text-upper">Veículo {{$car->name}} Ano {{$car->age}}</h2>
     <div class="row">
         <div class="col-md-6">
@@ -17,48 +17,11 @@
 
             <div name="itens" class="floating-container-show-itens">
                 <div class="row">
-
-                    <div class="col-md-4">
-                        @if($car->airbag)
-                        <h4 class="bi bi-bag-check-fill show-itens"> Airbag</h4>
-                        @endif
-
-                        @if($car->brake)
-                        <h4 class="bi bi-bag-check-fill show-itens"> Freio-ABS</h4>
-                        @endif
-
-                        @if($car->gps)
-                        <h4 class="bi bi-bag-check-fill show-itens"> GPS</h4>
-                        @endif
-                    </div>
-
-                    <div class="col-md-4">
-                        @if($car->lock)
-                        <h4 class="bi bi-bag-check-fill show-itens"> Travas Elétrica</h4>
-                        @endif
-
-                        @if($car->window)
-                        <h4 class="bi bi-bag-check-fill show-itens"> Vidros Elétricos</h4>
-                        @endif
-
-                        @if($car->alarm)
-                        <h4 class="bi bi-bag-check-fill show-itens"> Alarme</h4>
-                        @endif
-                    </div>
-
-                    <div class="col-md-4">
-                        @if($car->air_conditioning)
-                        <h4 class="bi bi-bag-check-fill show-itens"> Ar-Condicionado</h4>
-                        @endif
-
-                        @if($car->sensor)
-                        <h4 class="bi bi-bag-check-fill show-itens"> Sensor de Estacionamento</h4>
-                        @endif
-
-                        @if($car->steering)
-                        <h4 class="bi bi-bag-check-fill show-itens"> Direção Hidráulica</h4>
-                        @endif
-                    </div>
+                    <ul class="horizontal-list">
+                        @foreach($car->items as $item)
+                        <li><ion-icon class="bi bi-bag-check-fill show-itens"></ion-icon> {{$item}}</li>
+                        @endforeach
+                    </ul>
                 </div>
             </div>
         </div>
@@ -103,5 +66,6 @@
         </div>
     </div>
 </div>
+
 
 @endsection

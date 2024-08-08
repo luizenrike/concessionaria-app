@@ -13,6 +13,9 @@ class Manufacture extends Model
 
     public function cars(){
         //muitos carros
-        return $this->hasMany(Car::class);
+        return $this->hasMany(Car::class, 'manufacturer_id');
     }
+
+    
+
 }
